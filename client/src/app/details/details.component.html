@@ -1,0 +1,33 @@
+<table>
+  <tr>
+    <th>avatar_url</th>
+    <th>description</th>
+    <th>events_url</th>
+    <th>hooks_url</th>
+    <th>id</th>
+    <th>issues_url</th>
+    <th>login</th>
+    <th>members_url</th>
+    <th>node_id</th>
+    <th>public_members_url</th>
+    <th>repos_url</th>
+    <th>url</th>
+  </tr>
+  <tr *ngFor="let value of selectedDocument">
+    <th>{{value.avatar_url}} </th>
+    <th>{{value.description}} </th>
+    <th>{{value.events_url}} </th>
+    <th>{{value.hooks_url}} </th>
+    <th>{{value.id}} </th>
+    <th>{{value.issues_url}} </th>
+    <th>{{value.login}} </th>
+    <th>{{value.members_url}} </th>
+    <th>{{value.node_id}} </th>
+    <th>{{value.public_members_url}} </th>
+    <th>{{value.repos_url}} </th>
+    <th>{{value.url}} </th>
+    
+  </tr>
+</table>
+
+<button (click)="clearrecord()">clear</button>

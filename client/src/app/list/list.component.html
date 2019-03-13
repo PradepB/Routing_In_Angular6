@@ -1,0 +1,18 @@
+<p>
+  list works!
+</p>
+<table>
+  <tr>
+    <th>login</th>
+    <th>id</th>
+    <th>click</th>
+  </tr>
+  <tr *ngFor="let val of datavalue"> 
+    <th>{{val.login}}</th>
+    <th>{{val.id}}</th>
+    <th>
+      <!-- <a>click here</a> -->
+      <a (click)="passData(val)"  >click here</a>
+    </th>
+  </tr>
+</table>
